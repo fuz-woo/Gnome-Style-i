@@ -1,0 +1,14 @@
+[Desktop Entry]
+Type=X-GNOME-Metatheme
+Name=Style
+Comment=Style GTK2 / GTK3 theme
+Encoding=UTF-8
+
+Name[en]=index.theme
+
+[X-GNOME-Metatheme]
+GtkTheme=Style
+MetacityTheme=Style
+IconTheme=Style
+CursorTheme=Style
+ButtonLayout=close,minimize,maximize:menu

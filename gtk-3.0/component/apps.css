@@ -1,0 +1,15 @@
+NautilusWindow .primary-toolbar.toolbar {
+}
+
+
+NautilusWindow .toolbar {
+    -GtkWidget-window-dragging: true;
+    -GtkToolbar-button-relief: normal;    
+    padding: 0 3px 3px 3px;
+}
+
+/* buttons pathbar 1 */
+NautilusWindow .toolbar.menubar .button {
+    padding: 2px 4px;
+	border-color: transparent;
+}

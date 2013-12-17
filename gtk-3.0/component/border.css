@@ -1,0 +1,234 @@
+/* Borders */
+
+/**********
+ * Button *
+ **********/
+.button {
+    border-radius: 5px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: transparent;
+}
+
+.button,
+.inline-toolbar.toolbar .button,
+GtkContainer > GtkContainer > GtkContainer > GtkContainer > * > .toolbar .button {
+    border-image: url("assets/button.png") 7 / 7px stretch;
+}
+
+.button.default {
+    border-image: url("assets/button-default.png") 7 / 7px stretch;
+}
+
+.button:focus,
+.button.default:focus,
+.inline-toolbar.toolbar .button:focus,
+GtkContainer > GtkContainer > GtkContainer > GtkContainer > * > .toolbar .button:focus {
+    border-image: url("assets/button-focused.png") 7 / 7px stretch;
+}
+
+.button:hover,
+.inline-toolbar.toolbar .button:hover,
+GtkContainer > GtkContainer > GtkContainer > GtkContainer > * > .toolbar .button:hover {
+    border-image: url("assets/button-hover.png") 7 / 7px stretch;
+}
+
+.button.default:hover {
+    border-image: url("assets/button-default-hover.png") 7 / 7px stretch;
+}
+
+.button:hover:focus,
+.button.default:hover:focus,
+.inline-toolbar.toolbar .button:hover:focus,
+GtkContainer > GtkContainer > GtkContainer > GtkContainer > * > .toolbar .button:hover:focus {
+    border-image: url("assets/button-focused-hover.png") 7 / 7px stretch;
+}
+
+.button:insensitive,
+.button.default:insensitive,
+.inline-toolbar.toolbar .button:insensitive,
+GtkContainer > GtkContainer > GtkContainer > GtkContainer > * > .toolbar .button:insensitive {
+    border-image: url("assets/button-disabled.png") 7 / 7px stretch;
+}
+
+.button:active,
+.button.default:active,
+.inline-toolbar.toolbar .button:active,
+GtkContainer > GtkContainer > GtkContainer > GtkContainer > * > .toolbar .button:active {
+    border-image: url("assets/button-active.png") 7 / 7px stretch;
+}
+
+.button:active:hover,
+.button.default:active:hover,
+.inline-toolbar.toolbar .button:active:hover,
+GtkContainer > GtkContainer > GtkContainer > GtkContainer > * > .toolbar .button:active:hover {
+    border-image: url("assets/button-active-hover.png") 7 / 7px stretch;
+}
+
+.button:active:focus,
+.button.default:active:focus,
+.inline-toolbar.toolbar .button:active:focus,
+GtkContainer > GtkContainer > GtkContainer > GtkContainer > * > .toolbar .button:active:focus {
+    border-image: url("assets/button-active-focused.png") 7 / 7px stretch;
+}
+
+.button:active:hover:focus,
+.button.default:active:hover:focus,
+.inline-toolbar.toolbar .button:active:hover:focus,
+GtkContainer > GtkContainer > GtkContainer > GtkContainer > * > .toolbar .button:active:hover:focus {
+    border-image: url("assets/button-active-focused-hover.png") 7 / 7px stretch;
+}
+
+.button:active:insensitive,
+.inline-toolbar.toolbar .button:active:insensitive,
+GtkContainer > GtkContainer > GtkContainer > GtkContainer > * > .toolbar .button:active:insensitive {
+    border-image: url("assets/button-active-disabled.png") 7 / 7px stretch;
+}
+
+/*
+.toolbar .button{
+    border-image: none;
+}
+
+.toolbar .button:hover,
+.toolbar .linked .button {
+    border-image: url("assets/button-toolbar.png") 7 / 7px stretch;
+}
+
+.toolbar .button:focused {
+    border-image: url("assets/button-toolbar-focused.png") 7 / 7px stretch;
+}
+
+.toolbar .button:active {
+    border-image: url("assets/button-toolbar-active.png") 7 / 7px stretch;
+}
+
+.toolbar .button:active:focused {
+    border-image: url("assets/button-toolbar-active-focused.png") 7 / 7px stretch;
+}
+
+.toolbar .button:insensitive {
+    border-image: url("assets/button-toolbar-disabled.png") 7 / 7px stretch;
+}
+
+.menubar.menuitem:hover,
+.menubar .menuitem:hover {
+}
+*/
+
+/*********
+ * entry *
+ *********/
+.entry {
+	border-radius: 20px;
+	padding: 3px 4px;
+	padding-left: 10px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: transparent;
+	background-color: shade(@theme_bg_color, 1.03);
+
+    box-shadow: inset  0px  3px alpha(#000, 0.05),
+				inset  0px  2px alpha(#000, 0.07),
+                inset  2px  0px alpha(#000, 0.04),
+                inset -2px  0px alpha(#000, 0.04),
+                inset  0px -2px alpha(#000, 0.03),
+				inset  0px  1px shade(@theme_bg_color, 0.88),
+                inset  1px  0px shade(@theme_bg_color, 0.90),
+                inset -1px  0px shade(@theme_bg_color, 0.90),
+                inset  0px -1px shade(@theme_bg_color, 0.95);
+
+	color: @theme_text_color;
+
+}
+
+.entry:selected,
+.entry:selected:focus {
+}
+
+.entry:focus {
+	background-color: shade(@theme_bg_color, 1.07);
+	box-shadow: inset 0 0 2px alpha(@theme_selected_bg_color, 0.2),
+				inset 0 0 1px alpha(@theme_selected_bg_color, 1.0);
+	color: @theme_text_color;
+    transition: 500ms background-color;
+}
+
+.entry:insensitive {
+	background-color: @theme_bg_color;
+	box-shadow: none;
+	border-color: shade(@theme_bg_color, 0.9);
+	color: gray;
+}
+
+.primary-toolbar .entry,
+.toolbar .entry {
+}
+
+.primary-toolbar .entry:focus,
+.toolbar .entry:focus {
+}
+
+.toolbar .entry.progressbar,
+.toolbar .entry.progressbar,
+.entry.progressbar {
+    border-radius: 5px;
+    border-width: 0;
+}
+
+/******************
+ * combobox entry *
+ ******************/
+.notebook tab {
+    border-image: url("assets/notebook-tab-top.png") 8 22 3 22 / 8px 22px 3px 22px stretch;
+}
+
+.notebook tab.top:active {
+    border-image: url("assets/notebook-tab-top-active.png") 8 22 3 22 / 8px 22px 3px 22px stretch;
+}
+
+.notebook tab.top:active:focus {
+}
+
+.notebook tab.right {
+    border-image: url("assets/notebook-tab-right.png") 22 8 22 3 / 22px 8px 22px 3px stretch;
+}
+
+.notebook tab.right:active {
+    border-image: url("assets/notebook-tab-right-active.png") 22 8 22 3 / 22px 8px 22px 3px stretch;
+}
+
+.notebook tab.right:active:focus {
+    border-image: url("assets/notebook-tab-right-focused.png") 22 8 22 3 / 22px 8px 22px 3px stretch;
+}
+
+.notebook tab.bottom {
+    border-image: url("assets/notebook-tab-bottom.png") 3 22 8 22 / 3px 22px 8px 22px stretch;
+}
+
+.notebook tab.bottom:active {
+    border-image: url("assets/notebook-tab-bottom-active.png") 3 22 8 22 / 3px 22px 8px 22px stretch;
+}
+
+.notebook tab.bottom:active:focus {
+    border-image: url("assets/notebook-tab-bottom-focused.png") 3 22 8 22 / 3px 22px 8px 22px stretch;
+}
+
+.notebook tab.left {
+    border-image: url("assets/notebook-tab-left.png") 22 3 22 8 / 22px 3px 22px 8px stretch;
+}
+
+.notebook tab.left:active {
+    border-image: url("assets/notebook-tab-left-active.png") 22 3 22 8 / 22px 3px 22px 8px stretch;
+}
+
+.notebook tab.left:active:focus {
+    border-image: url("assets/notebook-tab-left-focused.png") 22 3 22 8 / 22px 3px 22px 8px stretch;
+}
+
+
+GtkComboBox .menuitem,
+GtkComboBox .button {
+	padding: 1px;
+	padding-left: 5px;
+}
