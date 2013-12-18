@@ -72,7 +72,7 @@
 * {
     /* inherit the color from parent by default */
     color: inherit;
-	text-shadow: 0 0 1px #aaa;
+	/*text-shadow: 0 0 1px #aaa;*/
     background-color: @theme_bg_color;
 
 }
@@ -91,7 +91,7 @@ GtkWindow {
 *:selected:focused {
     background-color: shade (@theme_selected_bg_color, 1.2);
     color: @theme_selected_fg_color;
-	border-radius: 3px;
+	/*border-radius: 3px;*/
 }
 
 
@@ -152,7 +152,7 @@ GtkWindow {
     border-style: none;
     margin: 1px 0;
     
-    transition: 100ms ease-in-out;
+    /*transition: 100ms ease-in-out;*/
 }
 
 GtkCheckButton:hover,
@@ -461,7 +461,7 @@ GtkLabel:insensitive {
     border-image: none;
     background-color: transparent;
     border-color: transparent;
-    transition: 100ms ease-in-out;
+    /*transition: 100ms ease-in-out;*/
 }
 
 .menubar.menuitem:hover,
@@ -495,7 +495,7 @@ GtkLabel:insensitive {
     color: @theme_fg_color;
 
     text-shadow: none;
-    transition: 40ms ease-in-out;
+    /*transition: 40ms ease-in-out;*/
 }
 
 /* Workaround for lp:949368 */
